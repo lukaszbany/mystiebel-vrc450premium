@@ -12,6 +12,7 @@ from .const import (
     ESSENTIAL_CONTROLS,
     EXCLUDED_INDIVIDUAL_SENSORS,
     NUMERIC_CONTROL_TYPES,
+    VRC450_REGISTERS,
 )
 from .sensor import MyStiebelBaseEntity, normalize_unit
 
@@ -59,13 +60,16 @@ class MyStiebelNumber(MyStiebelBaseEntity, NumberEntity):
         self._param = param
         self._attr_unique_id = f"mystiebel_{register_index}_number"
         self._attr_name = param.get("display_name")
-        self._attr_mode = NumberMode.BOX
+        self._attr_mode = (
+            NumberMode.SLIDER if register_index in VRC450_REGISTERS else NumberMode.BOX
+        )
         self._attr_native_min_value, self._attr_native_max_value = (
             param.get("min"),
             param.get("max"),
         )
         scale = int(param.get("scale", 0))
         self._attr_native_step = 10**scale if scale < 0 else 1
+        self._is_integer = scale >= 0
         unit, data_type = normalize_unit(param.get("unit")), param.get("data_type")
         self._attr_device_class = None
         if unit is None:
@@ -92,9 +96,10 @@ class MyStiebelNumber(MyStiebelBaseEntity, NumberEntity):
     def native_value(self) -> float | None:
         value = self.coordinator.data.get(self._register_index)
         try:
-            return float(value)
+            value = float(value)
         except (ValueError, TypeError):
             return None
+        return int(value) if self._is_integer else value
 
     async def async_set_native_value(self, value: float) -> None:
         await self.coordinator.async_set_value(self._register_index, value)

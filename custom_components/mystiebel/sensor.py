@@ -298,6 +298,7 @@ class MyStiebelSensor(MyStiebelBaseEntity, SensorEntity):
         self._attr_state_class = STATE_CLASS_MAP.get(data_type)
         if param.get("choices"):
             self._attr_state_class = None
+        self._is_integer = int(param.get("scale") or 0) >= 0
         if register_index not in ESSENTIAL_SENSORS:
             self._attr_entity_category = EntityCategory.DIAGNOSTIC
             self._attr_entity_registry_enabled_default = False
@@ -328,9 +329,10 @@ class MyStiebelSensor(MyStiebelBaseEntity, SensorEntity):
             except (ValueError, TypeError, KeyError):
                 pass
         try:
-            return float(value)
+            value = float(value)
         except (ValueError, TypeError):
             return value
+        return int(value) if self._is_integer else value
 
 
 class MyStiebelBinarySensor(MyStiebelBaseEntity, BinarySensorEntity):
