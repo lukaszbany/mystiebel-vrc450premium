@@ -19,6 +19,7 @@ from .const import (
     NUMERIC_CONTROL_TYPES,
     STATE_CLASS_MAP,
     UNIT_MAP,
+    VRC450_REGISTERS,
 )
 
 _LOGGER = logging.getLogger(__name__)
@@ -127,6 +128,17 @@ class MyStiebelBaseEntity(CoordinatorEntity):
 
     @property
     def device_info(self):
+        register_index = getattr(self, "_register_index", None)
+        if register_index in VRC450_REGISTERS:
+            return {
+                "identifiers": {
+                    (DOMAIN, f"{self.coordinator.installation_id}_vrc450")
+                },
+                "name": "VRC 450 Ventilation",
+                "manufacturer": "Stiebel Eltron",
+                "model": "VRC 450",
+                "via_device": (DOMAIN, self.coordinator.installation_id),
+            }
         return {
             "identifiers": {(DOMAIN, self.coordinator.installation_id)},
             "name": self.coordinator.device_name,
@@ -156,7 +168,7 @@ class MyStiebelCalculatedSensor(MyStiebelBaseEntity, SensorEntity):
         if config_divisor_name == "shower_output":
             self._attr_native_unit_of_measurement = "min"
             self._attr_device_class = SensorDeviceClass.DURATION
-        self._attr_entity_registry_enabled_default = True
+        self._attr_entity_registry_enabled_default = False
 
     def _handle_coordinator_update(self) -> None:
         self.async_write_ha_state()
@@ -183,7 +195,7 @@ class MyStiebelRuntimeSensor(MyStiebelBaseEntity, SensorEntity):
         self._day_idx = day_idx
         self._hour_idx = hour_idx
         self._attr_entity_category = EntityCategory.DIAGNOSTIC
-        self._attr_entity_registry_enabled_default = True
+        self._attr_entity_registry_enabled_default = False
 
     def _handle_coordinator_update(self) -> None:
         self.async_write_ha_state()
@@ -237,7 +249,7 @@ class MyStiebelAlarmSensor(MyStiebelBaseEntity, SensorEntity):
             f"mystiebel_{coordinator.installation_id}_alarm_description"
         )
         self._attr_entity_category = EntityCategory.DIAGNOSTIC
-        self._attr_entity_registry_enabled_default = True
+        self._attr_entity_registry_enabled_default = False
 
     @property
     def icon(self):

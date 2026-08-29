@@ -180,7 +180,7 @@ class MyStiebelHygieneTimeEntity(CoordinatorEntity, TimeEntity):
         self._attr_name = "Weekly hygiene program start time"
         self._attr_icon = "mdi:clock-check"
         self._attr_entity_category = EntityCategory.CONFIG
-        self._attr_entity_registry_enabled_default = True  # Enable by default as it's useful
+        self._attr_entity_registry_enabled_default = False
 
         # Device info
         self._attr_device_info = DeviceInfo(

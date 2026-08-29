@@ -27,32 +27,44 @@ MSG_ID_MAX = 9_999_999
 MSG_ID_LONG_MIN = 1_000_000_000
 MSG_ID_LONG_MAX = 9_999_999_999
 
+# All registers belonging to the VRC450 ventilation controller.
+# Used to (a) enable them by default and (b) group them under their own HA device.
+VRC450_REGISTERS = {
+    2553,  # Fan Speed / Humidity
+    2554,  # Air Temperature
+    2555,  # Register 2555
+    2556,  # Register 2556
+    2557,  # Register 2557
+    2558,  # Register 2558
+    2559,  # Register 2559
+    2560,  # Register 2560
+    2561,  # Register 2561
+    2562,  # Operating Mode / Fan Speed
+    2563,  # Filter Change Countdown
+    2564,  # Current Fan Speed
+    2565,  # Fan Speed Setpoint
+}
+
 # List of essential read-only sensors.
 # These will be enabled by default. All other sensor-type entities will be disabled by default.
 ESSENTIAL_SENSORS = [
-    15,  # Dome Temperature
-    2378,  # Current Target Temperature
-    2395,  # Mixed Water Volume
-    2758,  # Operating Mode
-    2388,  # SG-Ready State
-    1111,  # Compressor (state)
-    1116,  # Heating Element (state)
-    1130,  # Defrosting (state)
+    2553,  # VRC450: Fan Speed / Humidity
     2554,  # VRC450: Air Temperature
+    2555,  # VRC450: Register 2555
+    2556,  # VRC450: Register 2556
+    2557,  # VRC450: Register 2557
+    2558,  # VRC450: Register 2558
+    2559,  # VRC450: Register 2559
+    2560,  # VRC450: Register 2560
+    2561,  # VRC450: Register 2561
+    2562,  # VRC450: Operating Mode / Fan Speed
+    2563,  # VRC450: Filter Change Countdown
     2564,  # VRC450: Current Fan Speed
 ]
 
 # List of essential control entities (switches, numbers, selects).
 # These will also be enabled by default. All other controls will be disabled.
 ESSENTIAL_CONTROLS = [
-    13,  # Setpoint Temperature Comfort
-    14,  # Setpoint Temperature Eco
-    2466,  # Eco heating mode
-    2382,  # Boost Request (Select)
-    2487,  # Hot Water Plus Requested (Switch)
-    2498,  # Weekly Hygiene Program Requested (Switch)
-    2384,  # Frost Protection Requested (Switch)
-    2481,  # End of Vacation (Switch)
     2565,  # VRC450: Fan Speed Setpoint
 ]
 
