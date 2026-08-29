@@ -6143,6 +6143,388 @@
       "display_format_type": "decimal",
       "scale": "0",
       "unit": "none"
+    },
+    {
+      "id": "Fan Speed / Humidity",
+      "number": 2553,
+      "u_id": 2553,
+      "web_id": 2553,
+      "name": "Fan Speed / Humidity",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Percentage",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "56",
+      "min_value": "0",
+      "max_value": "100",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Air Temperature",
+      "number": 2554,
+      "u_id": 2554,
+      "web_id": 2554,
+      "name": "Air Temperature",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Temperature",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "24.5",
+      "min_value": "-50",
+      "max_value": "60",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "degree_celsius"
+    },
+    {
+      "id": "Register 2555",
+      "number": 2555,
+      "u_id": 2555,
+      "web_id": 2555,
+      "name": "Register 2555",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "State",
+      "choicelist_id": "State_on_off",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "1",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "name",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Register 2556",
+      "number": 2556,
+      "u_id": 2556,
+      "web_id": 2556,
+      "name": "Register 2556",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "State",
+      "choicelist_id": "State_on_off",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "1",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "name",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Register 2557",
+      "number": 2557,
+      "u_id": 2557,
+      "web_id": 2557,
+      "name": "Register 2557",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Number",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "240",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Register 2558",
+      "number": 2558,
+      "u_id": 2558,
+      "web_id": 2558,
+      "name": "Register 2558",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Number",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "9",
+      "min_value": "0",
+      "max_value": "32767",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Register 2559",
+      "number": 2559,
+      "u_id": 2559,
+      "web_id": 2559,
+      "name": "Register 2559",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "State",
+      "choicelist_id": "State_on_off",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "1",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "name",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Register 2560",
+      "number": 2560,
+      "u_id": 2560,
+      "web_id": 2560,
+      "name": "Register 2560",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "State",
+      "choicelist_id": "State_on_off",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "1",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "name",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Register 2561",
+      "number": 2561,
+      "u_id": 2561,
+      "web_id": 2561,
+      "name": "Register 2561",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "State",
+      "choicelist_id": "State_on_off",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "1",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "name",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Operating Mode / Fan Speed",
+      "number": 2562,
+      "u_id": 2562,
+      "web_id": 2562,
+      "name": "Operating Mode / Fan Speed",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Number",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "0",
+      "min_value": "0",
+      "max_value": "3",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Filter Change Countdown",
+      "number": 2563,
+      "u_id": 2563,
+      "web_id": 2563,
+      "name": "Filter Change Countdown",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "DurationDays",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "180",
+      "min_value": "1",
+      "max_value": "240",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Current Fan Speed",
+      "number": 2564,
+      "u_id": 2564,
+      "web_id": 2564,
+      "name": "Current Fan Speed",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Number",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read"
+        }
+      ],
+      "default_value": "1",
+      "min_value": "0",
+      "max_value": "3",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
+    },
+    {
+      "id": "Fan Speed Setpoint",
+      "number": 2565,
+      "u_id": 2565,
+      "web_id": 2565,
+      "name": "Fan Speed Setpoint",
+      "help": "empty_txt",
+      "special_min_text": "empty_txt",
+      "special_max_text": "empty_txt",
+      "data_type": "Number",
+      "access_permissions": [
+        {
+          "entity": "my_stiebel_app",
+          "access": "read_write"
+        },
+        {
+          "entity": "stiebel_eltron_cloud",
+          "access": "read_write"
+        }
+      ],
+      "default_value": "1",
+      "min_value": "0",
+      "max_value": "4",
+      "typical_values": [],
+      "depending_on": [],
+      "display_format_type": "decimal",
+      "scale": "0",
+      "unit": "none"
     }
   ],
   "groups": [
@@ -8158,6 +8540,22 @@
         {
           "from": 2752,
           "to": 2752
+        }
+      ],
+      "subgroups": []
+    },
+    {
+      "id": "VRC450_VENTILATION",
+      "name": "VRC450_VENTILATION",
+      "number": 51,
+      "parameters": [
+        2553, 2554, 2555, 2556, 2557, 2558, 2559, 2560, 2561, 2562, 2563, 2564,
+        2565
+      ],
+      "parameter_ranges": [
+        {
+          "from": 2553,
+          "to": 2565
         }
       ],
       "subgroups": []

@@ -38,6 +38,8 @@ ESSENTIAL_SENSORS = [
     1111,  # Compressor (state)
     1116,  # Heating Element (state)
     1130,  # Defrosting (state)
+    2554,  # VRC450: Air Temperature
+    2564,  # VRC450: Current Fan Speed
 ]
 
 # List of essential control entities (switches, numbers, selects).
@@ -51,6 +53,7 @@ ESSENTIAL_CONTROLS = [
     2498,  # Weekly Hygiene Program Requested (Switch)
     2384,  # Frost Protection Requested (Switch)
     2481,  # End of Vacation (Switch)
+    2565,  # VRC450: Fan Speed Setpoint
 ]
 
 # List of individual sensors to exclude from creation,
