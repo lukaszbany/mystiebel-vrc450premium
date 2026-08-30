@@ -6145,11 +6145,11 @@
       "unit": "none"
     },
     {
-      "id": "Fan Speed / Humidity",
+      "id": "VRC450_EXHAUST_AIR_HUMIDITY",
       "number": 2553,
       "u_id": 2553,
       "web_id": 2553,
-      "name": "Fan Speed / Humidity",
+      "name": "VRC450_EXHAUST_AIR_HUMIDITY",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6174,11 +6174,11 @@
       "unit": "none"
     },
     {
-      "id": "Air Temperature",
+      "id": "VRC450_EXHAUST_AIR_TEMPERATURE",
       "number": 2554,
       "u_id": 2554,
       "web_id": 2554,
-      "name": "Air Temperature",
+      "name": "VRC450_EXHAUST_AIR_TEMPERATURE",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6203,11 +6203,11 @@
       "unit": "degree_celsius"
     },
     {
-      "id": "Register 2555",
+      "id": "VRC450_BYPASS_STATUS",
       "number": 2555,
       "u_id": 2555,
       "web_id": 2555,
-      "name": "Register 2555",
+      "name": "VRC450_BYPASS_STATUS",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6233,11 +6233,11 @@
       "unit": "none"
     },
     {
-      "id": "Register 2556",
+      "id": "VRC450_REGISTER_2556",
       "number": 2556,
       "u_id": 2556,
       "web_id": 2556,
-      "name": "Register 2556",
+      "name": "VRC450_REGISTER_2556",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6263,15 +6263,15 @@
       "unit": "none"
     },
     {
-      "id": "Register 2557",
+      "id": "VRC450_INTENSIVE_VENTILATION_LEFT",
       "number": 2557,
       "u_id": 2557,
       "web_id": 2557,
-      "name": "Register 2557",
+      "name": "VRC450_INTENSIVE_VENTILATION_LEFT",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
-      "data_type": "Number",
+      "data_type": "Minute",
       "access_permissions": [
         {
           "entity": "my_stiebel_app",
@@ -6292,15 +6292,15 @@
       "unit": "none"
     },
     {
-      "id": "Register 2558",
+      "id": "VRC450_DAYS_TO_FILTER_REPLACEMENT",
       "number": 2558,
       "u_id": 2558,
       "web_id": 2558,
-      "name": "Register 2558",
+      "name": "VRC450_DAYS_TO_FILTER_REPLACEMENT",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
-      "data_type": "Number",
+      "data_type": "DurationDays",
       "access_permissions": [
         {
           "entity": "my_stiebel_app",
@@ -6321,11 +6321,11 @@
       "unit": "none"
     },
     {
-      "id": "Register 2559",
+      "id": "VRC450_REGISTER_2559",
       "number": 2559,
       "u_id": 2559,
       "web_id": 2559,
-      "name": "Register 2559",
+      "name": "VRC450_REGISTER_2559",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6351,11 +6351,11 @@
       "unit": "none"
     },
     {
-      "id": "Register 2560",
+      "id": "VRC450_REGISTER_2560",
       "number": 2560,
       "u_id": 2560,
       "web_id": 2560,
-      "name": "Register 2560",
+      "name": "VRC450_REGISTER_2560",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6381,11 +6381,11 @@
       "unit": "none"
     },
     {
-      "id": "Register 2561",
+      "id": "VRC450_REGISTER_2561",
       "number": 2561,
       "u_id": 2561,
       "web_id": 2561,
-      "name": "Register 2561",
+      "name": "VRC450_REGISTER_2561",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6411,11 +6411,11 @@
       "unit": "none"
     },
     {
-      "id": "Operating Mode / Fan Speed",
+      "id": "VRC450_OPERATING_MODE_FAN_SPEED",
       "number": 2562,
       "u_id": 2562,
       "web_id": 2562,
-      "name": "Operating Mode / Fan Speed",
+      "name": "VRC450_OPERATING_MODE_FAN_SPEED",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6440,15 +6440,15 @@
       "unit": "none"
     },
     {
-      "id": "Filter Change Countdown",
+      "id": "VRC450_INTENSIVE_VENTILATION_DURATION",
       "number": 2563,
       "u_id": 2563,
       "web_id": 2563,
-      "name": "Filter Change Countdown",
+      "name": "VRC450_INTENSIVE_VENTILATION_DURATION",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
-      "data_type": "DurationDays",
+      "data_type": "Minute",
       "access_permissions": [
         {
           "entity": "my_stiebel_app",
@@ -6469,11 +6469,11 @@
       "unit": "none"
     },
     {
-      "id": "Current Fan Speed",
+      "id": "VRC450_CURRENT_FAN_SPEED",
       "number": 2564,
       "u_id": 2564,
       "web_id": 2564,
-      "name": "Current Fan Speed",
+      "name": "VRC450_CURRENT_FAN_SPEED",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6498,11 +6498,11 @@
       "unit": "none"
     },
     {
-      "id": "Fan Speed Setpoint",
+      "id": "VRC450_FAN_SPEED_SETPOINT",
       "number": 2565,
       "u_id": 2565,
       "web_id": 2565,
-      "name": "Fan Speed Setpoint",
+      "name": "VRC450_FAN_SPEED_SETPOINT",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6519,7 +6519,7 @@
       ],
       "default_value": "1",
       "min_value": "0",
-      "max_value": "4",
+      "max_value": "3",
       "typical_values": [],
       "depending_on": [],
       "display_format_type": "decimal",
@@ -12652,6 +12652,71 @@
       "cs": "Servisní režim",
       "hu": "Szerviz üzemmód",
       "sk": "Servisný režim"
+    },
+    "VRC450_EXHAUST_AIR_HUMIDITY": {
+      "en": "Exhaust Air Humidity",
+      "pl": "Wilgotność powietrza wywiewanego",
+      "de": "Abluftfeuchte"
+    },
+    "VRC450_EXHAUST_AIR_TEMPERATURE": {
+      "en": "Exhaust Air Temperature",
+      "pl": "Temperatura powietrza wywiewanego",
+      "de": "Ablufttemperatur"
+    },
+    "VRC450_BYPASS_STATUS": {
+      "en": "Bypass Status",
+      "pl": "Stan bypassu",
+      "de": "Bypass-Status"
+    },
+    "VRC450_REGISTER_2556": {
+      "en": "Register 2556",
+      "pl": "Rejestr 2556",
+      "de": "Register 2556"
+    },
+    "VRC450_INTENSIVE_VENTILATION_LEFT": {
+      "en": "Intensive Ventilation Time Left",
+      "pl": "Pozostały czas wentylacji intensywnej",
+      "de": "Verbleibende Intensivlüftungszeit"
+    },
+    "VRC450_DAYS_TO_FILTER_REPLACEMENT": {
+      "en": "Days To Filter Replacement",
+      "pl": "Dni do wymiany filtra",
+      "de": "Tage bis Filterwechsel"
+    },
+    "VRC450_REGISTER_2559": {
+      "en": "Register 2559",
+      "pl": "Rejestr 2559",
+      "de": "Register 2559"
+    },
+    "VRC450_REGISTER_2560": {
+      "en": "Register 2560",
+      "pl": "Rejestr 2560",
+      "de": "Register 2560"
+    },
+    "VRC450_REGISTER_2561": {
+      "en": "Register 2561",
+      "pl": "Rejestr 2561",
+      "de": "Register 2561"
+    },
+    "VRC450_OPERATING_MODE_FAN_SPEED": {
+      "en": "Operating Mode / Fan Speed",
+      "pl": "Tryb pracy / Bieg wentylatora",
+      "de": "Betriebsart / Lüfterstufe"
+    },
+    "VRC450_INTENSIVE_VENTILATION_DURATION": {
+      "en": "Intensive Ventilation Duration",
+      "pl": "Czas trwania wentylacji intensywnej",
+      "de": "Dauer der Intensivlüftung"
+    },
+    "VRC450_CURRENT_FAN_SPEED": {
+      "en": "Current Fan Speed",
+      "pl": "Aktualny bieg wentylatora",
+      "de": "Aktuelle Lüfterstufe"
+    },
+    "VRC450_FAN_SPEED_SETPOINT": {
+      "en": "Fan Speed Setpoint",
+      "pl": "Zadany bieg wentylatora",
+      "de": "Soll-Lüfterstufe"
     }
   }
 }
