@@ -6321,11 +6321,11 @@
       "unit": "none"
     },
     {
-      "id": "VRC450_REGISTER_2559",
+      "id": "VRC450_FILTER_REPLACEMENT_NEEDED",
       "number": 2559,
       "u_id": 2559,
       "web_id": 2559,
-      "name": "VRC450_REGISTER_2559",
+      "name": "VRC450_FILTER_REPLACEMENT_NEEDED",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -12683,10 +12683,10 @@
       "pl": "Dni do wymiany filtra",
       "de": "Tage bis Filterwechsel"
     },
-    "VRC450_REGISTER_2559": {
-      "en": "Register 2559",
-      "pl": "Rejestr 2559",
-      "de": "Register 2559"
+    "VRC450_FILTER_REPLACEMENT_NEEDED": {
+      "en": "Filter replacement needed",
+      "pl": "Filterwechsel erforderlich",
+      "de": ""
     },
     "VRC450_REGISTER_2560": {
       "en": "Register 2560",
