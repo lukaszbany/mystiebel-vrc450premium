@@ -2,6 +2,41 @@
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz)
 
+> ## 🔀 About this fork
+>
+> This is a fork of [sanderkwantes/mystiebel](https://github.com/sanderkwantes/mystiebel), extended with support for the **Stiebel Eltron VRC 450** ventilation controller (registers 2553–2565), which isn't covered by the upstream integration.
+>
+> **What's new here:**
+> - VRC450 registers are exposed as their own entities, grouped under a separate **"VRC 450 Ventilation"** child device (nested under your main device).
+> - New entities added:
+>
+>   | Register | Entity | Entity type |
+>   |---|---|---|
+>   | 2553 | Exhaust Air Humidity | sensor |
+>   | 2554 | Exhaust Air Temperature | sensor |
+>   | 2555 | Bypass Status | binary sensor |
+>   | 2556 | Reset Filter Counter | button *(disabled by default — one-shot action)* |
+>   | 2557 | Intensive Ventilation Time Left | sensor |
+>   | 2558 | Days To Filter Replacement | sensor |
+>   | 2559 | Filter Replacement Needed | binary sensor |
+>   | 2560, 2561, 2562 | *meaning not yet identified* | sensor / binary sensor |
+>   | 2563 | Intensive Ventilation Duration | sensor |
+>   | 2564 | Current Fan Speed | sensor |
+>   | 2565 | Fan Speed Setpoint | number (slider, 0–3) |
+>
+>   <img src="docs/images/vrc450-entities.png" alt="VRC 450 Ventilation device card showing its sensors and controls" width="360">
+>
+> - All VRC450 entities are **enabled by default**, except the filter-reset button, which stays disabled since pressing it resets the device's filter counters.
+> - Registers 2560, 2561 and 2562 are exposed but their real meaning is still unconfirmed — if you can figure out what they represent on your unit, please open an issue or a PR upstream on this fork.
+>
+> **How to install this fork:** follow the [Installation](#installation) instructions below as-is, but when adding the custom repository in HACS, use this fork's URL instead of the upstream one:
+>
+> ```
+> https://github.com/lukaszbany/mystiebel-vrc450premium
+> ```
+>
+> **One important difference from upstream:** setup and configuration work exactly as described below, but this fork creates a **second Home Assistant device** — your main device stays the same, and a new **"VRC 450 Ventilation"** device appears alongside it (nested under it, linked via "Connected through"). All the VRC450 entities/controls from the table above live on *that* device page, not on the main one — so when the ["Enabling Entities"](#enabling-entities) steps say to open "the device page for your Stiebel Eltron device," open the **VRC 450 Ventilation** device specifically to find and manage these.
+
 The `MyStiebel` integration allows you to connect and control your Stiebel Eltron heat pump boiler through the official MyStiebel cloud service. It provides a comprehensive set of entities to monitor and manage your device directly from Home Assistant.
 
 This integration was built by reverse-engineering the API used by the official MyStiebel mobile app and is not officially affiliated with Stiebel Eltron.

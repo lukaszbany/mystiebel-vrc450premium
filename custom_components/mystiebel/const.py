@@ -39,7 +39,7 @@ VRC450_REGISTERS = {
     2559,  # Register 2559
     2560,  # Register 2560
     2561,  # Register 2561
-    2562,  # Operating Mode / Fan Speed
+    2562,  # Register 2562
     2563,  # Filter Change Countdown
     2564,  # Current Fan Speed
     2565,  # Fan Speed Setpoint

@@ -6411,11 +6411,11 @@
       "unit": "none"
     },
     {
-      "id": "VRC450_OPERATING_MODE_FAN_SPEED",
+      "id": "VRC450_REGISTER_2562",
       "number": 2562,
       "u_id": 2562,
       "web_id": 2562,
-      "name": "VRC450_OPERATING_MODE_FAN_SPEED",
+      "name": "VRC450_REGISTER_2562",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -12680,8 +12680,8 @@
     },
     "VRC450_FILTER_REPLACEMENT_NEEDED": {
       "en": "Filter replacement needed",
-      "pl": "Filterwechsel erforderlich",
-      "de": ""
+      "pl": "Wymagana wymiana filtra",
+      "de": "Filterwechsel erforderlich"
     },
     "VRC450_REGISTER_2560": {
       "en": "Register 2560",
@@ -12693,10 +12693,10 @@
       "pl": "Rejestr 2561",
       "de": "Register 2561"
     },
-    "VRC450_OPERATING_MODE_FAN_SPEED": {
-      "en": "Operating Mode / Fan Speed",
-      "pl": "Tryb pracy / Bieg wentylatora",
-      "de": "Betriebsart / Lüfterstufe"
+    "VRC450_REGISTER_2562": {
+      "en": "Register 2562",
+      "pl": "Rejestr 2562",
+      "de": "Register 2562"
     },
     "VRC450_INTENSIVE_VENTILATION_DURATION": {
       "en": "Intensive Ventilation Duration",
