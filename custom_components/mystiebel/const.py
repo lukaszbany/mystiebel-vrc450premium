@@ -45,6 +45,11 @@ VRC450_REGISTERS = {
     2565,  # Fan Speed Setpoint
 }
 
+# Registers that are momentary/self-resetting actions (device flips them back
+# to 0 on its own) rather than persistent on/off state - exposed as buttons,
+# not switches.
+MOMENTARY_REGISTERS = {2556}
+
 # List of essential read-only sensors.
 # These will be enabled by default. All other sensor-type entities will be disabled by default.
 ESSENTIAL_SENSORS = [

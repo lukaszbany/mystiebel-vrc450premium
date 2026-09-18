@@ -6233,11 +6233,11 @@
       "unit": "none"
     },
     {
-      "id": "VRC450_REGISTER_2556",
+      "id": "VRC450_FILTER_RESET",
       "number": 2556,
       "u_id": 2556,
       "web_id": 2556,
-      "name": "VRC450_REGISTER_2556",
+      "name": "VRC450_FILTER_RESET",
       "help": "empty_txt",
       "special_min_text": "empty_txt",
       "special_max_text": "empty_txt",
@@ -6246,11 +6246,11 @@
       "access_permissions": [
         {
           "entity": "my_stiebel_app",
-          "access": "read"
+          "access": "read_write"
         },
         {
           "entity": "stiebel_eltron_cloud",
-          "access": "read"
+          "access": "read_write"
         }
       ],
       "default_value": "0",
@@ -12668,11 +12668,6 @@
       "pl": "Stan bypassu",
       "de": "Bypass-Status"
     },
-    "VRC450_REGISTER_2556": {
-      "en": "Register 2556",
-      "pl": "Rejestr 2556",
-      "de": "Register 2556"
-    },
     "VRC450_INTENSIVE_VENTILATION_LEFT": {
       "en": "Intensive Ventilation Time Left",
       "pl": "Pozostały czas wentylacji intensywnej",
@@ -12717,6 +12712,11 @@
       "en": "Fan Speed Setpoint",
       "pl": "Zadany bieg wentylatora",
       "de": "Soll-Lüfterstufe"
+    },
+    "VRC450_FILTER_RESET": {
+      "en": "Reset Filter Counter",
+      "pl": "Zresetuj licznik filtra",
+      "de": "Filterzähler zurücksetzen"
     }
   }
 }

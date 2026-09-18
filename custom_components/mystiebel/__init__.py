@@ -17,7 +17,7 @@ from .websocket_client import setup_websocket_listener
 
 _LOGGER = logging.getLogger(__name__)
 
-PLATFORMS = ["binary_sensor", "number", "select", "sensor", "switch", "time"]
+PLATFORMS = ["binary_sensor", "button", "number", "select", "sensor", "switch", "time"]
 
 SERVICE_RESTART_CONNECTION = "restart_connection"
 SERVICE_RESTART_CONNECTION_SCHEMA = vol.Schema(

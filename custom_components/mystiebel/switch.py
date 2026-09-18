@@ -6,7 +6,12 @@ from homeassistant.components.switch import SwitchEntity
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity import EntityCategory
 
-from .const import DOMAIN, ESSENTIAL_CONTROLS, EXCLUDED_INDIVIDUAL_SENSORS
+from .const import (
+    DOMAIN,
+    ESSENTIAL_CONTROLS,
+    EXCLUDED_INDIVIDUAL_SENSORS,
+    MOMENTARY_REGISTERS,
+)
 from .sensor import MyStiebelBaseEntity
 
 _LOGGER = logging.getLogger(__name__)
@@ -28,6 +33,7 @@ def _setup_switch_entities(coordinator):
             param
             and "read_write" in param.get("access", [])
             and param.get("choicelist_id") == "State_on_off"
+            and idx not in MOMENTARY_REGISTERS
         ):
             switches.append(MyStiebelSwitch(coordinator, idx, param))
     return switches
